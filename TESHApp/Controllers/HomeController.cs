@@ -26,7 +26,7 @@ namespace TESHApp.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Esta es la página de Contacto del TESH";
 
             return View();
         }
