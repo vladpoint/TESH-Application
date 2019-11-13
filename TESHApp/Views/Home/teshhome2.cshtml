@@ -1,0 +1,36 @@
+﻿@model TESHApp.Models.Alumno;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>teshhome2</title>
+</head>
+<body>
+    <h2>Esta es la página TESH home 2</h2>
+
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+            <label asp-for="NombreAlumno">Nombre:</label>
+            <input asp-for="NombreAlumno" type="text" />
+            <span asp-validation-for="NombreAlumno" class="text-danger"></span>
+            <label asp-for="ApellidoAlumno">Apellido:</label>
+            <input asp-for="ApellidoAlumno" type="text" />
+            <span asp-validation-for="ApellidoAlumno" class="text-danger"></span>
+            <label asp-for="Matricula">Matricula:</label>
+            <input asp-for="Matricula" type="number" />
+            <span asp-validation-for="Matricula" class="text-danger"></span>
+            <label asp-for="Carrera">Carrera:</label>
+            <input asp-for="Carrera" type="text" />
+            <span asp-validation-for="Carrera" class="text-danger"></span>
+            <label asp-for="Semestre">Semestre:</label>
+            <input asp-for="Semestre" type="number" />
+            <span asp-validation-for="Semestre" class="text-danger"></span>
+        </div>
+    </form>
+</body>
+</html>
